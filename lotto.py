@@ -1,8 +1,13 @@
 import keyboard
 import random
 
-def get_barrel():
-    print("Pressed enter")
+def get_barrel(barrels):
+    if len(barrels) != 0:
+        rand = random.choice(barrels)
+        print(rand)
+        barrels.remove(rand)
+    else:
+        print("There aren't any barrels left. Press Esc to close the program, goodbye!")
 
 
 def get_number_of_barrels():
@@ -17,10 +22,9 @@ def get_number_of_barrels():
 def main():
     print("Random numbers generation (as in lotto game) \n")
     N = get_number_of_barrels()
-    barrels = [i for i in range(1, N+1)]
-
-
-    keyboard.add_hotkey('Enter', get_barrel)
+    barrels = [[i for i in range(1, N+1)]]
+    print("Now press Space to get one random barrel, or press Esc to exit")
+    keyboard.add_hotkey('space', get_barrel, args=barrels)
     keyboard.wait('Esc')
 
 
