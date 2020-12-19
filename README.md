@@ -5,7 +5,7 @@ This is once again my university assingment. The task was to write a program for
 
 I wanted to try something new and realised that there is a keyboard library in Python. As a result, you can use keyboard keys to manage this program.
 
-Input data is N = number of lotto barrels that you want to get. After pressing Enter you will get one number from gap (1, N). Numbers are unique so you can get every barrel only one time. To exit the program you should press Esc.
+Input data is N = number of lotto barrels that you want to get. After pressing Enter you will get one number from the gap (1, N). Numbers are unique so you can get every barrel only one time. To exit the program you should press Esc.
 
 ![](static/screenshot.jpg)
 
